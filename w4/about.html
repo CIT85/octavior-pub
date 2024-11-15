@@ -6,7 +6,7 @@
     <meta name="author" content="Octavio Rodriguez">
     <meta name="description" content="Hi, I am Octavio Rodriguez. This page is a little bit about myself.">
     <title>About me</title>
-    <link rel="icon" href="../img/html5.png" type="image/x-icon">
+    <link rel="icon" href="../img/About.jpg" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
@@ -74,9 +74,124 @@
                 recommendations it gave were spot on. I don't use it often but seeing how great it is, I think I will
                 start asking ChatGPT questions before google.</p>
         </article>
-    </main>
+        <hr>
 
-    <hr>
+        <article id="contact">
+            <h2>Lets get to know eachother! :D</h2>
+            <p>I'd really like to get to know everyone!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                <p>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Snow" autocomplete="on" required>
+                </p>
+                <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="5595554444" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                    <p>
+                        <label for="genre">Favorite Movie Genre:</label>
+                        <select name="movie-genre" id="genre" multiple size="4">
+                            <optgroup label="Movie Genres">
+                                <option value="action" selected>Action</option>
+                                <option value="animation">Animation</option>
+                                <option value="anime">Anime</option>
+                                <option value="comedy">Comedy</option>
+                                <option value="drama">Drama</option>
+                                <option value="horror">Horror</option>
+                                <option value="romance">Romance</option>
+                                <option value="thriller">Thriller</option>
+                                <option value="other">Other</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your favorite Cuisine?</legend>
+                    <p>
+                        <input type="radio" name="food" id="mexican" value="mexican">
+                        <label for="mexican">Mexican</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="chinese" value="chinese">
+                        <label for="chinese">Chinese</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="italian" value="italian">
+                        <label for="italian">Italian</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="thai" value="thai">
+                        <label for="thai">Thai</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="rodents" value="rodents">
+                        <label for="rodents">Rodents</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                        <label for="otherPet">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send Me A Note</legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+<hr>
+
+<article>
+    <h2>Understanding the output from httpbin</h2>
+    <p>
+        The primary use of httpbins is to help developers inspect what data is being sent, and to test form submissions, headers, and other http request details.
+    </p>
+    <p>
+        If you submit the form, httpbin will respond by "echoing" back the form data that was sent in the request. The output you see will be a JSON response that shows the data that was sent in the request body.
+    </p>
+</article>
+    </main>
+<hr>
+
+<footer class="footer">
+    &lt;&lt;&lt; &copy; <a href="about.html">Octavio Rodriguez</a> &gt;&gt;&gt;
+    <p>
+        <a href="/octavior-pub/w4/index.html">Back to Home</a>
+    </p>
     <ul>
         <li>
             Download an <a href="../img/ancientp.png" download="">Ancient Phylosophy representation favicon</a>
@@ -85,10 +200,7 @@
             Open <a href="https://www.google.com/" target="_blank">Google</a> in a new tab.
         </li>
     </ul>
-    &lt;&lt;&lt; &copy; <a href="about.html">Octavio Rodriguez</a> &gt;&gt;&gt;
-    <p>
-        <a href="/octavior-pub/w4/index.html">Back to Home</a>
-    </p>
+</footer>
 </body>
 
 </html>

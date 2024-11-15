@@ -2,26 +2,50 @@ html {
     font-size: 22px;
 }
 
+header {
+    background-color: salmon;
+    margin: 30px;
+    padding: 20px;
+}
+
 body {
-    background-color: #333;
-    color: whitesmoke;
+    background-color: beige;
+    color: black;
 }
 
 a {
-    color: aliceblue;
+    color: beige;
 }
 
 a:visited {
-    color: lightgray;
+    color: blue;
 }
 
 a:hover, a:active {
-    color: #eee;
+    color: black;
 }
 
-table, tr, th, td, caption {
-    border: 1px solid #eee;
-    font-family: 'Courier New', Courier, monospace;
+caption, tfoot {
+    border: 3px solid salmon;
+    background-color: salmon;
+    font-family: 'Times New Roman', Times, serif;
     border-collapse: collapse;
+    margin: 0 auto;
     padding: 0.5rem;
+}
+
+table, tr, th, td {
+    border: 3px solid salmon;
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    margin: 0 auto;
 }
