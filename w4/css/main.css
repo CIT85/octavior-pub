@@ -1,0 +1,60 @@
+html { /* This is the font size for the documents as a whole. */
+    font-size: 22px;
+}
+
+/* Specific to the headers across the sites, background color, margin which is the outermost section of the box model and padding which surrounds the content. */
+header {
+    background-color: salmon;
+    margin: 30px;
+    padding: 20px;
+}
+
+body { /* The color of the body page and the text */
+    background-color: beige;
+    color: black;
+}
+
+a { /* Color of the links */
+    color: beige;
+}
+
+a:visited { /* Color of the links that have been visited */
+    color: blue;
+}
+
+a:hover, a:active { /* Color of the links that are being hovered over or selected */
+    color: black;
+}
+
+caption, tfoot { /* Border, color, font and padding for the caption and tfoot */
+    border: 3px solid salmon;
+    background-color: salmon;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+}
+
+table { /* The tables border, font collapsing the borders and I wanted the tables to be centered */
+    border: 3px solid salmon;
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr, th, td { /* padding and border for the different cells within the tables */
+    padding: 0.5rem;
+    border: 3px solid salmon;
+}
+
+.footer { /* I wanted the footers to be the same color and centered */
+    text-align: center;
+    background-color: salmon;
+}
+
+ /* I only wanted the sitemap header to be centered so I used the class selector specifity on this one which is a      0 1 0 that is why only the sitemap header is centered. */
+.header {
+    text-align: center;
+}
+
+.img { /* I only needed the color palette image to be outlined so one of the colors didn't fade with the background */
+    border: 3px solid black;
+}
